@@ -2,5 +2,4 @@
   (loop for i from start to end by step
       collect i))
 
-(+ (apply #'+ (create-interval 1 1000 3)) (apply #'+ (create-interval 1 1000 5)))
-
+(- (+ (apply #'+ (create-interval 0 999 3)) (apply #'+ (create-interval 0 999 5))) (apply #'+ (create-interval 0 999 15)))
